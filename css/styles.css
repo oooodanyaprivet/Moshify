@@ -802,7 +802,8 @@ a {
 
 .feature {
   gap: 4rem 2rem;
-  margin: 12rem 0;
+  margin: 6rem 0;
+  margin-bottom: 3rem;
 }
 
 .feature:first-of-type {
