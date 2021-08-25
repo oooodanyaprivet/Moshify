@@ -32,7 +32,6 @@ html {
 }
 
 body {
-  margin: 10px;
   font-family: "Inter", Arial, Helvetica, sans-serif;
   font-size: 2.4rem;
   line-height: 1.5;
@@ -116,7 +115,7 @@ a {
   font-weight: 600;
   padding: 0.5rem 2rem;
   white-space: nowrap;
-  display: inlin;
+  display: inline;
 }
 
 .badge--primary {
@@ -216,7 +215,7 @@ a {
   font-weight: 600;
   margin: 1rem 0;
   outline: 0;
-  padding: 2rem 3rem;
+  padding: 2rem 4vw;
   text-transform: uppercase;
   white-space: nowrap;
   text-align: center;
@@ -277,9 +276,20 @@ a {
   padding-right: 6rem;
 }
 
+.button__child {
+  display: inline-block;
+}
+
 @media screen and (min-width: 1024px) {
   .btn {
     font-size: 1.5rem;
+    max-width: 250px;
+  }
+
+  .button__child {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
 
@@ -308,6 +318,7 @@ a {
   border: 0;
   flex-grow: 1;
   padding: 1.5rem 2rem;
+  width: 0;
 }
 
 .input-group .btn {
@@ -623,9 +634,8 @@ a {
 
 /* Blocks */
 .block {
-  --padding-vertical: 6rem;
+  --padding-vertical: 5rem;
   padding: var(--padding-vertical) 2rem;
-  border: 2px solid red;
 }
 
 .block__heading {
@@ -651,12 +661,12 @@ a {
 
 .block--skewed-right {
   padding-bottom: calc(var(--padding-vertical) + 4rem);
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 95%);
 }
 
 .block--skewed-left {
   padding-bottom: calc(var(--padding-vertical) + 4rem);
-  clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%);
 }
 
 /* Navigation Bar */
@@ -756,8 +766,9 @@ a {
 }
 
 .block-domain__prices {
+  color: var(--color-headings);
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   grid-template-rows: repeat(2, 6rem);
   justify-items: center;
   font-size: 2rem;
@@ -774,8 +785,12 @@ a {
 
 /* Plans Block */
 
+.block-plans {
+  padding-top: 0;
+}
+
 .block-plans .grid {
-  gap: 8rem 4rem;
+  gap: 9rem 4rem;
 }
 
 .block-plans .card {
