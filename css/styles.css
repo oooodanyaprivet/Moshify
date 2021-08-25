@@ -830,6 +830,10 @@ a {
 
 /* Showcase Block */
 
+.block-showcase {
+  padding-top: 7rem;
+}
+
 .block-showcase__image > img {
   width: 100%;
 }
