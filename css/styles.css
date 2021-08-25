@@ -806,6 +806,10 @@ a {
   margin-bottom: 3rem;
 }
 
+.block-feature {
+  margin-top: 3rem;
+}
+
 .feature:first-of-type {
   margin-top: 6rem;
 }
@@ -849,6 +853,7 @@ a {
 
 .footer {
   background: #232323;
+  padding-top: 10rem;
 }
 
 .footer a {
@@ -921,4 +926,10 @@ a {
   .footer__heading {
     font-size: 1.6rem;
   }
+}
+
+/* Sign-up Callout */
+
+.callout-signup {
+  transform: translateY(5rem);
 }
